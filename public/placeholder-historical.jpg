@@ -1,0 +1,45 @@
+<!-- This is a placeholder SVG for historical images -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sepia">
+      <feColorMatrix type="matrix" values="0.393 0.769 0.189 0 0
+                                           0.349 0.686 0.168 0 0
+                                           0.272 0.534 0.131 0 0
+                                           0 0 0 1 0"/>
+    </filter>
+    <pattern id="vintage" patternUnits="userSpaceOnUse" width="50" height="50">
+      <rect width="50" height="50" fill="#F4F1E8"/>
+      <circle cx="10" cy="15" r="0.5" fill="#D4B896" opacity="0.4"/>
+      <circle cx="40" cy="35" r="0.5" fill="#D4B896" opacity="0.4"/>
+      <circle cx="25" cy="45" r="0.5" fill="#D4B896" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#vintage)" filter="url(#sepia)"/>
+  
+  <!-- Vintage photo frame -->
+  <rect x="50" y="50" width="700" height="500" fill="none" stroke="#8B6F47" stroke-width="8" opacity="0.7"/>
+  <rect x="60" y="60" width="680" height="480" fill="none" stroke="#5D4E37" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Content -->
+  <text x="400" y="200" text-anchor="middle" font-family="serif" font-size="36" fill="#5D4E37" opacity="0.8">
+    Historical Image
+  </text>
+  <text x="400" y="250" text-anchor="middle" font-family="serif" font-size="24" fill="#8B6F47" opacity="0.7">
+    Placeholder
+  </text>
+  <text x="400" y="300" text-anchor="middle" font-family="serif" font-size="16" fill="#8B6F47" opacity="0.6">
+    Replace with actual heritage photos
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="20" fill="none" stroke="#8B6F47" stroke-width="2" opacity="0.4"/>
+  <circle cx="650" cy="450" r="15" fill="none" stroke="#8B6F47" stroke-width="2" opacity="0.4"/>
+  <path d="M300,400 Q350,380 400,400 T500,400" stroke="#8B6F47" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Vintage photo corners -->
+  <path d="M70,70 L90,70 L90,90" stroke="#5D4E37" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M730,70 L710,70 L710,90" stroke="#5D4E37" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M70,530 L90,530 L90,510" stroke="#5D4E37" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M730,530 L710,530 L710,510" stroke="#5D4E37" stroke-width="3" fill="none" opacity="0.6"/>
+</svg>

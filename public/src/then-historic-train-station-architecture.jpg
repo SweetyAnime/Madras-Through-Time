@@ -1,0 +1,18 @@
+<!-- Historic Train Station Architecture Placeholder -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F4F1E8"/>
+  <rect x="100" y="200" width="600" height="200" fill="#D4B896" stroke="#8B6F47" stroke-width="3"/>
+  <polygon points="100,200 400,100 700,200" fill="#8B6F47"/>
+  <rect x="200" y="250" width="60" height="100" fill="#5D4E37"/>
+  <rect x="280" y="250" width="60" height="100" fill="#5D4E37"/>
+  <rect x="460" y="250" width="60" height="100" fill="#5D4E37"/>
+  <rect x="540" y="250" width="60" height="100" fill="#5D4E37"/>
+  <rect x="350" y="180" width="100" height="70" fill="#8B6F47"/>
+  <circle cx="400" cy="215" r="25" fill="#F4F1E8"/>
+  <text x="400" y="460" text-anchor="middle" font-family="serif" font-size="24" fill="#5D4E37">
+    Chennai Central - Historical
+  </text>
+  <text x="400" y="490" text-anchor="middle" font-family="serif" font-size="16" fill="#8B6F47">
+    Indo-Saracenic Railway Architecture (1873)
+  </text>
+</svg>
