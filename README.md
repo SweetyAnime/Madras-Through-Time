@@ -44,12 +44,13 @@
 - Smooth color transitions
 - Sound integration with Web Audio API
 
+
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14.2.15 with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS with custom vintage theme
-- **Fonts**: Playfair Display, Crimson Text, Old Standard TT
+- **Font**: Abril Fatface (all text)
 - **Animations**: CSS3 Keyframes, Transform3D
 - **Audio**: Web Audio API
 
@@ -63,9 +64,7 @@
 - **Text**: `#5D4E37` (Dark Brown)
 
 ### Typography
-- **Primary**: Playfair Display (elegant serif for titles)
-- **Secondary**: Crimson Text (readable serif for content)
-- **Accent**: Old Standard TT (vintage newspaper style)
+- **All Text**: Abril Fatface (bold, vintage display serif)
 
 ### Visual Elements
 - Rich leather and parchment textures
@@ -139,11 +138,17 @@ madras-through-time/
 
 ## 🚀 Deployment
 
+
 ### Vercel (Recommended)
-```bash
-npm run build
-npx vercel
-```
+1. Push your code to GitHub (public or private repo).
+2. Go to [https://vercel.com/import](https://vercel.com/import) and import your repository.
+3. Vercel will auto-detect Next.js and deploy your site.
+4. Or, to deploy manually from your terminal:
+   ```bash
+   npm run build
+   npx vercel --prod
+   ```
+5. Your site will be live at `https://your-project-name.vercel.app`.
 
 ### Other Platforms
 ```bash

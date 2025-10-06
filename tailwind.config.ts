@@ -21,7 +21,7 @@ const config: Config = {
       fontFamily: {
         serif: ["Georgia", "Times New Roman", "serif"],
         sans: ["Inter", "Arial", "sans-serif"],
-        vintage: ["'Playfair Display'", "'Crimson Text'", "'Old Standard TT'", "Georgia", "serif"],
+        vintage: ["'Abril Fatface'", "serif"],
       },
       backgroundImage: {
         "vintage-texture": "url('/textures/parchment.png')",
