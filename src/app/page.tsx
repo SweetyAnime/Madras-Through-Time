@@ -204,7 +204,7 @@ export default function HomePage() {
             <div className="text-center border-t border-vintage-sepia/30 pt-8">
               <div className="flex items-center justify-center mb-4">
                 <img 
-                  src="/src/innovatia2.png" 
+                  src="/src/Innovatia2.png" 
                   alt="Innovatia 4.0 Logo" 
                   className="w-12 h-12 mr-3 rounded-lg border-2 border-vintage-sepia/30 object-cover"
                   style={{
