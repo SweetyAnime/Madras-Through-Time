@@ -147,42 +147,55 @@ export default function HomePage() {
       ))}
       
       {/* Enhanced Vintage Footer */}
-      <footer className="pl-64 pr-8 bg-gradient-to-br from-vintage-darkbrown via-black/80 to-vintage-darkbrown text-vintage-cream py-16 transition-all duration-500 hover:from-vintage-brown w-full vintage-paper relative overflow-hidden">
+      <footer className="pl-64 pr-8 bg-gradient-to-br from-vintage-darkbrown/95 via-vintage-brown/85 to-vintage-darkbrown/95 text-vintage-cream py-20 transition-all duration-500 hover:from-vintage-brown/95 w-full vintage-paper relative overflow-hidden border-t-4 border-vintage-sepia/30">
         {/* Footer background effects */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-vintage-darkbrown/60 via-transparent to-vintage-brown/20"></div>
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(139, 111, 71, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(212, 184, 150, 0.05) 0%, transparent 50%)',
+          backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(139, 111, 71, 0.15) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(212, 184, 150, 0.08) 0%, transparent 50%)',
           backgroundSize: '300px 300px, 400px 400px'
         }}></div>
         
+        {/* Vintage corner decorations */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-4 border-t-4 border-vintage-sepia/40 rounded-tl-lg"></div>
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-4 border-t-4 border-vintage-sepia/40 rounded-tr-lg"></div>
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-4 border-b-4 border-vintage-sepia/40 rounded-bl-lg"></div>
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-4 border-b-4 border-vintage-sepia/40 rounded-br-lg"></div>
+        
         <div className="w-full max-w-none mx-auto px-8 text-center relative z-10">
-          <h3 className="font-vintage text-4xl font-bold mb-6 transition-all duration-300 hover:text-vintage-sepia hover:scale-105 letterpress-text animate-fade-in">
+          <h3 className="font-vintage text-5xl font-bold mb-8 transition-all duration-300 hover:text-vintage-sepia hover:scale-105 letterpress-text animate-fade-in text-vintage-cream">
             Madras Through Time
           </h3>
-          <p className="font-vintage text-vintage-sepia mb-8 transition-all duration-300 hover:text-vintage-cream text-xl leading-relaxed animate-slide-in-left">
+          <p className="font-vintage text-vintage-sepia mb-10 transition-all duration-300 hover:text-vintage-cream text-2xl leading-relaxed animate-slide-in-left font-semibold">
             Preserving the heritage and celebrating the evolution of Chennai
           </p>
           
           {/* Enhanced decorative divider */}
-          <div className="flex items-center justify-center space-x-8 mb-8 transition-all duration-500 hover:scale-110 animate-bounce-in">
-            <div className="w-20 h-1 bg-gradient-to-r from-transparent to-vintage-sepia transition-all duration-300 hover:w-24 hover:to-vintage-cream vintage-glow"></div>
-            <div className="w-4 h-4 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow"></div>
-            <div className="font-vintage text-xl text-vintage-sepia hover-vintage">❋</div>
-            <div className="w-4 h-4 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow"></div>
-            <div className="w-20 h-1 bg-gradient-to-l from-transparent to-vintage-sepia transition-all duration-300 hover:w-24 hover:to-vintage-cream vintage-glow"></div>
+          <div className="flex items-center justify-center space-x-10 mb-10 transition-all duration-500 hover:scale-110 animate-bounce-in">
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-vintage-sepia to-vintage-cream transition-all duration-300 hover:w-28 vintage-glow"></div>
+            <div className="w-6 h-6 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow border border-vintage-cream/30"></div>
+            <div className="font-vintage text-2xl text-vintage-sepia hover:text-vintage-cream transition-all duration-300 hover:scale-125 hover-vintage">❋</div>
+            <div className="w-6 h-6 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow border border-vintage-cream/30"></div>
+            <div className="w-24 h-1 bg-gradient-to-l from-transparent via-vintage-sepia to-vintage-cream transition-all duration-300 hover:w-28 vintage-glow"></div>
           </div>
           
-          <p className="font-vintage text-lg text-vintage-brown italic transition-all duration-300 hover:text-vintage-sepia hover:scale-105 mb-6 animate-slide-in-right hover-vintage">
+          <p className="font-vintage text-xl text-vintage-brown italic transition-all duration-300 hover:text-vintage-sepia hover:scale-105 mb-8 animate-slide-in-right hover-vintage leading-relaxed px-4">
             "A city is not gauged by its length and width, but by the width of its vision and the height of its dreams"
           </p>
           
-          {/* Additional vintage elements */}
-          <div className="flex items-center justify-center space-x-12 mt-8 opacity-70 hover:opacity-100 transition-all duration-500">
-            <div className="font-vintage text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover-vintage">🏛️</div>
-            <div className="font-vintage text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover-vintage">🌺</div>
-            <div className="font-vintage text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover-vintage">📜</div>
-            <div className="font-vintage text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover-vintage">🕯️</div>
-            <div className="font-vintage text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover-vintage">⚓</div>
+          {/* Additional vintage elements with better spacing */}
+          <div className="flex items-center justify-center space-x-16 mt-12 opacity-80 hover:opacity-100 transition-all duration-500">
+            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">🏛️</div>
+            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">🌺</div>
+            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">📜</div>
+            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">🕯️</div>
+            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">⚓</div>
+          </div>
+          
+          {/* Copyright section with better styling */}
+          <div className="mt-16 pt-8 border-t border-vintage-sepia/30">
+            <p className="font-vintage text-lg text-vintage-brown/80 transition-all duration-300 hover:text-vintage-sepia">
+              © 2025 Madras Through Time • Crafted with ❤️ for Chennai's Heritage
+            </p>
           </div>
         </div>
       </footer>

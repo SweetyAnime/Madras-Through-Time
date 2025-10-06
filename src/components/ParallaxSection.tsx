@@ -138,11 +138,13 @@ export default function ParallaxSection({
               <div className="text-center z-10 bg-gradient-to-br from-vintage-darkbrown/95 via-vintage-brown/90 to-vintage-darkbrown/95 px-16 py-12 rounded-3xl border-4 border-vintage-sepia/50 shadow-2xl vintage-border vintage-glow hover-lift">
                 <h2 className="font-vintage text-6xl font-bold mb-6 letterpress-text transition-all duration-500 hover:scale-110">
                   <span className="text-vintage-sepia">THE </span>
-                  <span className="text-red-400 inline-block transition-all duration-300 hover:scale-125 hover:text-red-300" 
+                  <span className="text-red-400 inline-block transition-all duration-300 hover:scale-105 hover:text-red-300" 
                         style={{
-                          textShadow: '0 0 15px rgba(248, 113, 113, 0.6), 0 0 30px rgba(248, 113, 113, 0.4)',
+                          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(248, 113, 113, 0.4)',
                           animation: 'heartbeat 2s infinite',
-                          filter: 'drop-shadow(0 0 10px rgba(248, 113, 113, 0.5))'
+                          fontWeight: '900',
+                          WebkitFontSmoothing: 'antialiased',
+                          MozOsxFontSmoothing: 'grayscale'
                         }}>
                     HEART
                   </span>
@@ -150,8 +152,10 @@ export default function ParallaxSection({
                 </h2>
                 <h3 className="font-vintage text-6xl font-bold mb-8 text-cyan-400 letterpress-text transition-all duration-500 hover:scale-105 hover:text-cyan-300"
                     style={{
-                      textShadow: '0 0 20px rgba(34, 211, 238, 0.5), 0 0 40px rgba(34, 211, 238, 0.3)',
-                      filter: 'drop-shadow(0 0 8px rgba(34, 211, 238, 0.4))'
+                      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(34, 211, 238, 0.3)',
+                      fontWeight: '900',
+                      WebkitFontSmoothing: 'antialiased',
+                      MozOsxFontSmoothing: 'grayscale'
                     }}>
                   TAMILNADU
                 </h3>
