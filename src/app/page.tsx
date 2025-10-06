@@ -6,8 +6,8 @@ const landmarkData = [
     id: 'marina-beach',
     title: 'Marina Beach',
     subtitle: 'The Pearl of the Indian Ocean',
-    historicalText: 'Marina Beach, stretching over 13 kilometers, has been the soul of Chennai since the colonial era. Originally called "Madras Marina," this pristine coastline served as a promenade for British officials and local residents. The beach witnessed historic moments, from independence rallies to cultural celebrations, making it an integral part of Chennai\'s social fabric.',
-    modernText: 'Today, Marina Beach stands as one of the world\'s longest natural urban beaches, attracting millions of visitors annually. The beach has been beautifully developed with modern amenities while preserving its natural charm. From sunrise joggers to evening families, Marina continues to be the beating heart of Chennai\'s social life.',
+    historicalText: 'Marina Beach, stretching over 13 kilometers, has been the soul of Chennai since the colonial era. Originally called &quot;Madras Marina,&quot; this pristine coastline served as a promenade for British officials and local residents. The beach witnessed historic moments, from independence rallies to cultural celebrations, making it an integral part of Chennai&apos;s social fabric.',
+    modernText: 'Today, Marina Beach stands as one of the world&apos;s longest natural urban beaches, attracting millions of visitors annually. The beach has been beautifully developed with modern amenities while preserving its natural charm. From sunrise joggers to evening families, Marina continues to be the beating heart of Chennai&apos;s social life.',
     backgroundMapUrl: '/src/now current administrative headquators.jpg',
     historicalImageUrl: '/src/marina beach then.webp',
     thenImageUrl: '/src/marina beach then.webp',
@@ -28,8 +28,8 @@ const landmarkData = [
     id: 'ripon-building',
     title: 'Ripon Building',
     subtitle: 'Seat of Civic Administration',
-    historicalText: 'Constructed in 1913, the Ripon Building was named after Lord Ripon, the Viceroy of India. This Neo-Classical structure with Corinthian columns served as the headquarters of the Madras Corporation. The building\'s white façade and imposing clock tower made it a landmark of British administrative architecture in South India.',
-    modernText: 'The Ripon Building continues to house the Greater Chennai Corporation, serving as the administrative heart of the city. Recently restored, it maintains its colonial grandeur while incorporating modern facilities. The building stands as a testament to Chennai\'s administrative continuity from the colonial era to the present day.',
+    historicalText: 'Constructed in 1913, the Ripon Building was named after Lord Ripon, the Viceroy of India. This Neo-Classical structure with Corinthian columns served as the headquarters of the Madras Corporation. The building&apos;s white façade and imposing clock tower made it a landmark of British administrative architecture in South India.',
+    modernText: 'The Ripon Building continues to house the Greater Chennai Corporation, serving as the administrative heart of the city. Recently restored, it maintains its colonial grandeur while incorporating modern facilities. The building stands as a testament to Chennai&apos;s administrative continuity from the colonial era to the present day.',
     backgroundMapUrl: '/src/Now  Current administrative headquarters.jpg',
     historicalImageUrl: '/src/then ribbon building structure.webp',
     thenImageUrl: '/src/then ribbon building structure.webp',
@@ -40,7 +40,7 @@ const landmarkData = [
     title: 'Chennai Central',
     subtitle: 'The Gateway to South India',
     historicalText: 'Built in 1873, Madras Central was one of the grandest railway stations in British India. Originally called Central Station, it served as the terminus for the Madras Railway Company. The station featured Indo-Saracenic architecture with red brick facades and was a symbol of British engineering prowess in colonial India.',
-    modernText: 'Today, Chennai Central stands as one of India\'s busiest railway stations, serving over 550,000 passengers daily. While maintaining its historical charm, the station has been modernized with electronic displays, escalators, and improved passenger amenities. It remains the primary railway hub connecting Chennai to major cities across India.',
+    modernText: 'Today, Chennai Central stands as one of India&apos;s busiest railway stations, serving over 550,000 passengers daily. While maintaining its historical charm, the station has been modernized with electronic displays, escalators, and improved passenger amenities. It remains the primary railway hub connecting Chennai to major cities across India.',
     backgroundMapUrl: '/src/now current administrative headquators.jpg',
     historicalImageUrl: '/src/Then Historic train station architecture.jpg',
     thenImageUrl: '/src/Then Historic train station architecture.jpg',
@@ -50,8 +50,8 @@ const landmarkData = [
     id: 'chennai-heritage',
     title: 'Heritage Timeline from Madras to Chennai',
     subtitle: 'Legacy of Timeless Beauty',
-    historicalText: 'Chennai\'s heritage encompasses centuries of architectural splendor, cultural richness, and historical significance. From ancient temples to colonial buildings, the city has preserved its magnificent past while embracing progress. Each heritage structure tells a story of the diverse civilizations that have shaped this great metropolis.',
-    modernText: 'Today, Chennai stands as a guardian of South Indian heritage, where ancient traditions seamlessly blend with contemporary life. The city\'s commitment to preserving its historical landmarks ensures that future generations can witness the grandeur and cultural depth that define Chennai\'s unique identity.',
+    historicalText: 'Chennai&apos;s heritage encompasses centuries of architectural splendor, cultural richness, and historical significance. From ancient temples to colonial buildings, the city has preserved its magnificent past while embracing progress. Each heritage structure tells a story of the diverse civilizations that have shaped this great metropolis.',
+    modernText: 'Today, Chennai stands as a guardian of South Indian heritage, where ancient traditions seamlessly blend with contemporary life. The city&apos;s commitment to preserving its historical landmarks ensures that future generations can witness the grandeur and cultural depth that define Chennai&apos;s unique identity.',
     backgroundMapUrl: '/src/now current administrative headquators.jpg',
     historicalImageUrl: '/src/heritage.jpeg',
     thenImageUrl: '/src/heritage.jpeg',
@@ -109,7 +109,7 @@ export default function HomePage() {
             Madras Through Time
           </h1>
           <p className="font-vintage text-3xl text-vintage-cream italic mb-8 transition-all duration-300 hover:text-vintage-sepia animate-slide-in-left hover-vintage">
-            A Journey Through Chennai's Rich Heritage
+            A Journey Through Chennai&apos;s Rich Heritage
           </p>
           <div className="w-48 h-1 bg-gradient-to-r from-transparent via-vintage-sepia to-transparent mx-auto mb-8 transition-all duration-500 hover:w-64 hover:via-vintage-cream animate-float"></div>
           <p className="font-vintage text-xl text-vintage-cream leading-relaxed w-full max-w-3xl mx-auto transition-all duration-300 hover:text-vintage-sepia animate-slide-in-right">
@@ -194,7 +194,7 @@ export default function HomePage() {
           {/* Quote Section */}
           <div className="text-center mb-16 border-t border-b border-vintage-sepia/30 py-8">
             <p className="font-vintage text-xl italic text-vintage-cream leading-relaxed max-w-4xl mx-auto">
-              "A city is not gauged by its length and width, but by the width of its vision and the height of its dreams"
+              &ldquo;A city is not gauged by its length and width, but by the width of its vision and the height of its dreams&rdquo;
             </p>
           </div>
           
@@ -238,7 +238,7 @@ export default function HomePage() {
                   © 2025 Madras Through Time
                 </p>
                 <p className="font-vintage text-vintage-sepia">
-                  Crafted with passion for Chennai's Heritage
+                  Crafted with passion for Chennai&apos;s Heritage
                 </p>
               </div>
               
