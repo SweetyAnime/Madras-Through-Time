@@ -42,7 +42,7 @@ body {
   bottom: 0;
   background: linear-gradient(45deg, transparent 0%, rgba(93, 78, 55, 0.1) 25%, transparent 50%, rgba(93, 78, 55, 0.1) 75%, transparent 100%);
   pointer-events: none;
-  animation: vintageShimmer 8s ease-in-out infinite;
+  /* animation: vintageShimmer 8s ease-in-out infinite; - DISABLED */
 }
 
 /* Enhanced vintage borders */
@@ -275,9 +275,7 @@ html {
   animation: bounceIn 0.8s ease-out forwards;
 }
 
-.animate-float {
-  animation: floatUp 3s ease-in-out infinite alternate;
-}
+/* .animate-float animation disabled for performance */
 
 .animate-typewriter {
   animation: typewriter 2s steps(20) forwards, blink 1s infinite;
@@ -506,4 +504,34 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #2C3E50, #8B2635);
+}
+
+/* Gentle floating animation for heritage emoji */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateY(-8px) rotate(1deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-4px) rotate(-1deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-12px) rotate(0.5deg);
+    opacity: 0.95;
+  }
+}
+
+/* Add elegant glow effect for heritage emoji */
+.vintage-glow {
+  filter: drop-shadow(0 0 8px rgba(212, 184, 150, 0.3));
+  transition: all 0.5s ease;
+}
+
+.vintage-glow:hover {
+  filter: drop-shadow(0 0 15px rgba(212, 184, 150, 0.6)) drop-shadow(0 0 25px rgba(139, 111, 71, 0.4));
 }

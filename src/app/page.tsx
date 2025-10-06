@@ -22,7 +22,7 @@ const landmarkData = [
     backgroundMapUrl: '/src/Now  Current administrative headquarters.jpg',
     historicalImageUrl: '/src/kabaleeshwarar temple then.webp',
     thenImageUrl: '/src/kabaleeshwarar temple then.webp',
-    nowImageUrl: '/src/kabaleeshwarar temple now.webp',
+    nowImageUrl: '/src/kapaleeshwarar-temple-now.webp',
   },
   {
     id: 'ripon-building',
@@ -146,56 +146,108 @@ export default function HomePage() {
         />
       ))}
       
-      {/* Enhanced Vintage Footer */}
-      <footer className="pl-64 pr-8 bg-gradient-to-br from-vintage-darkbrown/95 via-vintage-brown/85 to-vintage-darkbrown/95 text-vintage-cream py-20 transition-all duration-500 hover:from-vintage-brown/95 w-full vintage-paper relative overflow-hidden border-t-4 border-vintage-sepia/30">
-        {/* Footer background effects */}
-        <div className="absolute inset-0 bg-gradient-to-t from-vintage-darkbrown/60 via-transparent to-vintage-brown/20"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(139, 111, 71, 0.15) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(212, 184, 150, 0.08) 0%, transparent 50%)',
-          backgroundSize: '300px 300px, 400px 400px'
-        }}></div>
+      {/* Professional Vintage Footer */}
+      <footer className="pl-64 pr-8 bg-gradient-to-b from-vintage-brown to-vintage-darkbrown text-vintage-cream py-20 w-full relative border-t-2 border-vintage-sepia/50">
+        <div className="absolute inset-0 bg-vintage-darkbrown/90"></div>
         
-        {/* Vintage corner decorations */}
-        <div className="absolute top-4 left-4 w-16 h-16 border-l-4 border-t-4 border-vintage-sepia/40 rounded-tl-lg"></div>
-        <div className="absolute top-4 right-4 w-16 h-16 border-r-4 border-t-4 border-vintage-sepia/40 rounded-tr-lg"></div>
-        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-4 border-b-4 border-vintage-sepia/40 rounded-bl-lg"></div>
-        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-4 border-b-4 border-vintage-sepia/40 rounded-br-lg"></div>
-        
-        <div className="w-full max-w-none mx-auto px-8 text-center relative z-10">
-          <h3 className="font-vintage text-5xl font-bold mb-8 transition-all duration-300 hover:text-vintage-sepia hover:scale-105 letterpress-text animate-fade-in text-vintage-cream">
-            Madras Through Time
-          </h3>
-          <p className="font-vintage text-vintage-sepia mb-10 transition-all duration-300 hover:text-vintage-cream text-2xl leading-relaxed animate-slide-in-left font-semibold">
-            Preserving the heritage and celebrating the evolution of Chennai
-          </p>
-          
-          {/* Enhanced decorative divider */}
-          <div className="flex items-center justify-center space-x-10 mb-10 transition-all duration-500 hover:scale-110 animate-bounce-in">
-            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-vintage-sepia to-vintage-cream transition-all duration-300 hover:w-28 vintage-glow"></div>
-            <div className="w-6 h-6 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow border border-vintage-cream/30"></div>
-            <div className="font-vintage text-2xl text-vintage-sepia hover:text-vintage-cream transition-all duration-300 hover:scale-125 hover-vintage">❋</div>
-            <div className="w-6 h-6 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow border border-vintage-cream/30"></div>
-            <div className="w-24 h-1 bg-gradient-to-l from-transparent via-vintage-sepia to-vintage-cream transition-all duration-300 hover:w-28 vintage-glow"></div>
-          </div>
-          
-          <p className="font-vintage text-xl text-vintage-brown italic transition-all duration-300 hover:text-vintage-sepia hover:scale-105 mb-8 animate-slide-in-right hover-vintage leading-relaxed px-4">
-            "A city is not gauged by its length and width, but by the width of its vision and the height of its dreams"
-          </p>
-          
-          {/* Additional vintage elements with better spacing */}
-          <div className="flex items-center justify-center space-x-16 mt-12 opacity-80 hover:opacity-100 transition-all duration-500">
-            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">🏛️</div>
-            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">🌺</div>
-            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">📜</div>
-            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">🕯️</div>
-            <div className="font-vintage text-3xl text-vintage-brown hover:text-vintage-sepia transition-all duration-300 hover:scale-125 hover-vintage cursor-pointer">⚓</div>
-          </div>
-          
-          {/* Copyright section with better styling */}
-          <div className="mt-16 pt-8 border-t border-vintage-sepia/30">
-            <p className="font-vintage text-lg text-vintage-brown/80 transition-all duration-300 hover:text-vintage-sepia">
-              © 2025 Madras Through Time • Crafted with ❤️ for Chennai's Heritage
+        <div className="w-full max-w-6xl mx-auto px-8 relative z-10">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <h2 className="font-vintage text-4xl font-bold text-vintage-cream mb-4 tracking-wide">
+              Madras Through Time
+            </h2>
+            <p className="font-vintage text-xl text-vintage-sepia leading-relaxed max-w-3xl mx-auto">
+              Preserving the heritage and celebrating the evolution of Chennai
             </p>
+          </div>
+          
+          {/* Content Grid */}
+          <div className="grid md:grid-cols-3 gap-12 mb-16">
+            <div className="text-center">
+              <h3 className="font-vintage text-2xl font-semibold text-vintage-cream mb-4">
+                Heritage
+              </h3>
+              <p className="font-vintage text-vintage-sepia leading-relaxed">
+                Exploring the rich cultural tapestry and architectural marvels that define Chennai's timeless legacy.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="font-vintage text-2xl font-semibold text-vintage-cream mb-4">
+                Mission
+              </h3>
+              <p className="font-vintage text-vintage-sepia leading-relaxed">
+                Bridging the past and present through immersive storytelling and visual documentation.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="font-vintage text-2xl font-semibold text-vintage-cream mb-4">
+                Vision
+              </h3>
+              <p className="font-vintage text-vintage-sepia leading-relaxed">
+                Inspiring future generations to appreciate and preserve Chennai's remarkable transformation.
+              </p>
+            </div>
+          </div>
+          
+          {/* Quote Section */}
+          <div className="text-center mb-16 border-t border-b border-vintage-sepia/30 py-8">
+            <p className="font-vintage text-xl italic text-vintage-cream leading-relaxed max-w-4xl mx-auto">
+              "A city is not gauged by its length and width, but by the width of its vision and the height of its dreams"
+            </p>
+          </div>
+          
+          {/* Bottom Section */}
+          <div className="flex flex-col space-y-8">
+            {/* Competition Information */}
+            <div className="text-center border-t border-vintage-sepia/30 pt-8">
+              <div className="flex items-center justify-center mb-4">
+                <img 
+                  src="/src/innovatia2.png" 
+                  alt="Innovatia 4.0 Logo" 
+                  className="w-12 h-12 mr-3 rounded-lg border-2 border-vintage-sepia/30 object-cover"
+                  style={{
+                    filter: 'sepia(30%) contrast(1.1) brightness(1.1)',
+                  }}
+                />
+                <div className="text-left">
+                  <h4 className="font-vintage text-lg font-semibold text-vintage-cream">
+                    Innovatia 4.0 - Sri Sai Ram Engineering College
+                  </h4>
+                  <p className="font-vintage text-vintage-sepia text-sm">
+                    Competition: Vintage Webverse
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mb-4">
+                <p className="font-vintage text-vintage-cream font-semibold mb-2">
+                  Team: Alpha Warriors
+                </p>
+                <p className="font-vintage text-vintage-sepia">
+                  Janavi • Surthiga • Subash
+                </p>
+              </div>
+            </div>
+            
+            {/* Copyright Section */}
+            <div className="flex flex-col md:flex-row justify-between items-center border-t border-vintage-sepia/30 pt-6">
+              <div className="mb-4 md:mb-0">
+                <p className="font-vintage text-lg text-vintage-cream">
+                  © 2025 Madras Through Time
+                </p>
+                <p className="font-vintage text-vintage-sepia">
+                  Crafted with passion for Chennai's Heritage
+                </p>
+              </div>
+              
+              <div className="text-vintage-sepia">
+                <p className="font-vintage text-sm">
+                  Preserving History • Celebrating Culture
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

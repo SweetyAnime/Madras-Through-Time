@@ -109,31 +109,53 @@ export default function ParallaxSection({
           </div>
 
           {isHeartSlide ? (
-            <div className="flex items-center justify-center min-h-96 relative animate-bounce-in">
-              <div className="absolute -top-16 -left-16 text-5xl animate-bounce delay-100 hover:scale-125 transition-transform duration-300 vintage-glow">🌺</div>
-              <div className="absolute -top-20 left-32 text-4xl animate-pulse delay-300 hover:scale-125 transition-transform duration-300 vintage-glow">🦋</div>
-              <div className="absolute -top-12 right-24 text-5xl animate-bounce delay-500 hover:scale-125 transition-transform duration-300 vintage-glow">🌸</div>
-              <div className="absolute -top-16 -right-12 text-4xl animate-pulse delay-700 hover:scale-125 transition-transform duration-300 vintage-glow">🌷</div>
+            <div className="flex items-center justify-center min-h-96 relative">
+              <div className="absolute -top-16 -left-16 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4s ease-in-out infinite'}}>✨</div>
+              <div className="absolute -top-20 left-32 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.5s ease-in-out infinite 0.5s'}}>🎪</div>
+              <div className="absolute -top-12 right-24 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.2s ease-in-out infinite 1s'}}>🌸</div>
+              <div className="absolute -top-16 -right-12 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.8s ease-in-out infinite 1.5s'}}>🌷</div>
               
-              <div className="absolute top-8 -left-20 text-5xl animate-pulse delay-200 hover:scale-125 transition-transform duration-300 vintage-glow">🌻</div>
-              <div className="absolute top-16 right-32 text-4xl animate-bounce delay-600 hover:scale-125 transition-transform duration-300 vintage-glow">🦋</div>
-              <div className="absolute left-12 -top-8 text-4xl animate-bounce delay-900 hover:scale-125 transition-transform duration-300 vintage-glow">🎭</div>
-              <div className="absolute -left-8 top-20 text-5xl animate-pulse delay-100 hover:scale-125 transition-transform duration-300 vintage-glow">🎪</div>
-              <div className="absolute right-8 top-4 text-4xl animate-bounce delay-300 hover:scale-125 transition-transform duration-300 vintage-glow">🎨</div>
-              <div className="absolute -right-16 bottom-16 text-5xl animate-pulse delay-500 hover:scale-125 transition-transform duration-300 vintage-glow">🎵</div>
+              <div className="absolute top-8 -left-20 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.6s ease-in-out infinite 0.8s'}}>🌻</div>
+              <div className="absolute top-16 right-32 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.1s ease-in-out infinite 0.3s'}}>🦋</div>
+              <div className="absolute left-12 -top-8 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.9s ease-in-out infinite 1.2s'}}>🕌</div>
+              <div className="absolute -left-8 top-20 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.3s ease-in-out infinite 0.7s'}}>🎪</div>
+              <div className="absolute right-8 top-4 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.7s ease-in-out infinite 1.4s'}}>🛕</div>
+              <div className="absolute -right-16 bottom-16 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.4s ease-in-out infinite 0.2s'}}>⛪</div>
               
-              <div className="absolute bottom-8 -left-16 text-4xl animate-bounce delay-400 hover:scale-125 transition-transform duration-300 vintage-glow">🌺</div>
-              <div className="absolute bottom-12 left-24 text-5xl animate-pulse delay-800 hover:scale-125 transition-transform duration-300 vintage-glow">🌸</div>
-              <div className="absolute bottom-6 right-20 text-4xl animate-bounce delay-200 hover:scale-125 transition-transform duration-300 vintage-glow">🌷</div>
-              <div className="absolute -bottom-12 -right-8 text-5xl animate-pulse delay-600 hover:scale-125 transition-transform duration-300 vintage-glow">🌻</div>
-              <div className="absolute -bottom-16 left-8 text-4xl animate-bounce delay-1000 hover:scale-125 transition-transform duration-300 vintage-glow">🦋</div>
-              <div className="absolute -bottom-20 right-40 text-5xl animate-pulse delay-400 hover:scale-125 transition-transform duration-300 vintage-glow">🌺</div>
-              <div className="absolute bottom-16 -left-24 text-4xl animate-bounce delay-700 hover:scale-125 transition-transform duration-300 vintage-glow">🌸</div>
-              <div className="absolute -bottom-8 left-40 text-5xl animate-pulse delay-300 hover:scale-125 transition-transform duration-300 vintage-glow">🌷</div>
-              <div className="absolute bottom-20 right-8 text-4xl animate-bounce delay-900 hover:scale-125 transition-transform duration-300 vintage-glow">🌻</div>
-              <div className="absolute -bottom-24 -left-8 text-5xl animate-pulse delay-1100 hover:scale-125 transition-transform duration-300 vintage-glow">🎭</div>
-              <div className="absolute bottom-24 right-32 text-4xl animate-bounce delay-500 hover:scale-125 transition-transform duration-300 vintage-glow">🎪</div>
-              <div className="absolute -bottom-28 left-28 text-5xl animate-pulse delay-200 hover:scale-125 transition-transform duration-300 vintage-glow">🎨</div>
+              <div className="absolute bottom-8 -left-16 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.8s ease-in-out infinite 1.1s'}}>🌺</div>
+              <div className="absolute bottom-12 left-24 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.2s ease-in-out infinite 0.6s'}}>🛕</div>
+              <div className="absolute bottom-6 right-20 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.5s ease-in-out infinite 1.3s'}}>🌷</div>
+              <div className="absolute -bottom-12 -right-8 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.1s ease-in-out infinite 0.9s'}}>🌻</div>
+              <div className="absolute -bottom-16 left-8 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.9s ease-in-out infinite 0.4s'}}>🦋</div>
+              <div className="absolute -bottom-20 right-40 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.3s ease-in-out infinite 1.6s'}}>🌺</div>
+              <div className="absolute bottom-16 -left-24 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.6s ease-in-out infinite 0.1s'}}>🌸</div>
+              <div className="absolute -bottom-8 left-40 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.5s ease-in-out infinite 1.7s'}}>🌷</div>
+              <div className="absolute bottom-20 right-8 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.7s ease-in-out infinite 0.8s'}}>🌻</div>
+              <div className="absolute -bottom-24 -left-8 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.0s ease-in-out infinite 1.0s'}}>🪔</div>
+              <div className="absolute bottom-24 right-32 text-4xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 3.8s ease-in-out infinite 1.5s'}}>🎪</div>
+              <div className="absolute -bottom-28 left-28 text-5xl hover:scale-125 transition-transform duration-500 vintage-glow" 
+                   style={{animation: 'gentleFloat 4.2s ease-in-out infinite 0.3s'}}>🎊</div>
               
               <div className="text-center z-10 bg-gradient-to-br from-vintage-darkbrown/95 via-vintage-brown/90 to-vintage-darkbrown/95 px-16 py-12 rounded-3xl border-4 border-vintage-sepia/50 shadow-2xl vintage-border vintage-glow hover-lift">
                 <h2 className="font-vintage text-6xl font-bold mb-6 letterpress-text transition-all duration-500 hover:scale-110">

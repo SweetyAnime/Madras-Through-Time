@@ -83,7 +83,7 @@ export default function VintageSidebar() {
   };
 
   return (
-    <div className={`fixed left-0 top-0 h-full w-64 z-50 border-r-4 border-vintage-sepia/50 shadow-2xl transition-all duration-700 ease-in-out transform hover:shadow-3xl vintage-glow ${
+    <div className={`fixed left-0 top-0 h-full w-64 z-50 border-r-4 border-vintage-sepia/50 shadow-2xl transition-all duration-700 ease-in-out transform hover:shadow-3xl vintage-glow flex flex-col ${
       isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
     }`}
     style={{
@@ -95,13 +95,13 @@ export default function VintageSidebar() {
       <div className="absolute inset-0 bg-gradient-to-b from-vintage-sepia/10 to-vintage-brown/5 transition-opacity duration-300 vintage-paper"></div>
       
       {/* Header */}
-      <div className="relative p-8 border-b-2 border-vintage-sepia/30 transition-all duration-300 hover:border-vintage-cream vintage-border">
+      <div className="relative px-6 py-6 border-b-2 border-vintage-sepia/30 transition-all duration-300 hover:border-vintage-cream vintage-border flex-shrink-0">
         {/* Chennai Logo */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-4">
           <img 
             src="/src/logo of chennai.jpeg" 
             alt="Chennai Logo" 
-            className="w-20 h-20 rounded-full border-4 border-vintage-sepia/50 transition-all duration-300 hover:border-vintage-cream hover:scale-110 object-cover vintage-border hover-lift"
+            className="w-16 h-16 rounded-full border-4 border-vintage-sepia/50 transition-all duration-300 hover:border-vintage-cream hover:scale-110 object-cover vintage-border hover-lift"
             style={{
               filter: 'sepia(40%) contrast(1.3) brightness(1.1)',
               boxShadow: '0 0 25px rgba(139, 111, 71, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.3)'
@@ -111,41 +111,41 @@ export default function VintageSidebar() {
             }}
           />
         </div>
-        <h1 className="font-vintage text-3xl font-bold text-vintage-sepia letterpress-text text-center transition-all duration-300 hover:text-vintage-cream hover:scale-105 animate-slide-in-left">
+        <h1 className="font-vintage text-2xl font-bold text-vintage-sepia letterpress-text text-center transition-all duration-300 hover:text-vintage-cream">
           Madras
         </h1>
-        <p className="font-vintage text-xl text-vintage-cream text-center italic transition-all duration-300 hover:text-vintage-sepia animate-slide-in-right hover-vintage">
+        <p className="font-vintage text-lg text-vintage-cream text-center italic transition-all duration-300 hover:text-vintage-sepia">
           Through Time
         </p>
-        <div className="mt-6 h-1 bg-gradient-to-r from-transparent via-vintage-sepia to-transparent transition-all duration-300 hover:via-vintage-cream hover:h-2 animate-float"></div>
+        <div className="mt-4 h-1 bg-gradient-to-r from-transparent via-vintage-sepia to-transparent transition-all duration-300 hover:via-vintage-cream hover:h-2"></div>
       </div>
 
       {/* Navigation */}
-      <nav className="relative p-8">
-        <ul className="space-y-8">
+      <nav className="relative px-6 py-4 flex-1 overflow-y-auto">
+        <ul className="space-y-4">
           {navigationItems.map((item, index) => (
             <li key={item.id} className={`transition-all duration-500 ease-out ${
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
             }`} style={{ transitionDelay: `${(index + 1) * 150}ms` }}>
               <button
                 onClick={() => scrollToSection(item.target)}
-                className={`w-full text-left p-5 rounded-xl transition-all duration-500 ease-in-out border-2 transform hover:scale-105 hover:shadow-lg vintage-border hover-lift ${
+                className={`w-full text-left p-4 rounded-lg transition-all duration-300 border-2 transform hover:scale-105 vintage-border ${
                   activeSection === item.id
                     ? 'border-vintage-cream bg-vintage-sepia/30 text-vintage-cream shadow-md scale-105 vintage-glow'
                     : 'border-vintage-sepia/30 text-vintage-sepia hover:border-vintage-cream hover:bg-vintage-brown/20 hover:text-vintage-cream'
                 }`}
               >
-                <span className="font-vintage text-xl letterpress-text transition-all duration-300 hover:tracking-wide hover-vintage">
+                <span className="font-vintage text-lg letterpress-text transition-all duration-300">
                   {item.label}
                 </span>
               </button>
               
-              {/* Enhanced ornate separator */}
+              {/* Compact separator */}
               {index < navigationItems.length - 1 && (
-                <div className="mt-8 flex items-center justify-center transition-all duration-500 hover:scale-110 animate-float">
-                  <div className="w-20 h-1 bg-gradient-to-r from-transparent to-vintage-sepia transition-all duration-300 hover:to-vintage-cream hover:w-24 vintage-glow"></div>
-                  <div className="mx-3 w-3 h-3 bg-vintage-sepia rotate-45 transition-all duration-300 hover:bg-vintage-cream hover:rotate-90 hover:scale-125 vintage-glow"></div>
-                  <div className="w-20 h-1 bg-gradient-to-l from-transparent to-vintage-sepia transition-all duration-300 hover:to-vintage-cream hover:w-24 vintage-glow"></div>
+                <div className="mt-4 flex items-center justify-center">
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-vintage-sepia/50"></div>
+                  <div className="mx-2 w-2 h-2 bg-vintage-sepia/50 rotate-45"></div>
+                  <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-vintage-sepia/50"></div>
                 </div>
               )}
             </li>
@@ -153,18 +153,11 @@ export default function VintageSidebar() {
         </ul>
       </nav>
 
-      {/* Enhanced decorative footer */}
-      <div className="absolute bottom-8 left-8 right-8">
-        <div className="border-t-2 border-vintage-sepia/30 pt-6 transition-all duration-300 hover:border-vintage-cream vintage-border">
-          <p className="text-center text-lg text-vintage-cream italic font-serif transition-all duration-300 hover:text-vintage-sepia hover:scale-105 letterpress-text hover-vintage">
-            Heritage Lives On
-          </p>
-          <div className="mt-4 flex items-center justify-center space-x-4 opacity-70 hover:opacity-100 transition-all duration-500">
-            <div className="text-vintage-sepia hover:text-vintage-cream transition-all duration-300 hover-vintage">🏛️</div>
-            <div className="text-vintage-sepia hover:text-vintage-cream transition-all duration-300 hover-vintage">🌺</div>
-            <div className="text-vintage-sepia hover:text-vintage-cream transition-all duration-300 hover-vintage">📜</div>
-          </div>
-        </div>
+      {/* Compact footer */}
+      <div className="px-6 py-4 border-t border-vintage-sepia/30">
+        <p className="text-center text-sm text-vintage-cream font-serif">
+          Heritage Lives On
+        </p>
       </div>
     </div>
   );
