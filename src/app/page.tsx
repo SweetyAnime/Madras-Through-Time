@@ -168,7 +168,7 @@ export default function HomePage() {
                 Heritage
               </h3>
               <p className="font-vintage text-vintage-sepia leading-relaxed">
-                Exploring the rich cultural tapestry and architectural marvels that define Chennai's timeless legacy.
+                Exploring the rich cultural tapestry and architectural marvels that define Chennai&apos;s timeless legacy.
               </p>
             </div>
             
@@ -186,7 +186,7 @@ export default function HomePage() {
                 Vision
               </h3>
               <p className="font-vintage text-vintage-sepia leading-relaxed">
-                Inspiring future generations to appreciate and preserve Chennai's remarkable transformation.
+                Inspiring future generations to appreciate and preserve Chennai&apos;s remarkable transformation.
               </p>
             </div>
           </div>
